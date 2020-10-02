@@ -1,0 +1,96 @@
+/* day 3 intro to semantic elements and classes */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fab000;
+  font-family: gotham, verdana, arial, sans-serif;
+}
+
+header {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* specificity */
+header h1 {
+  font-size: 62px;
+  text-transform: uppercase;
+}
+
+header h2 {
+  font-familiy: georgia, times, serif;
+  font-style: italic;
+  color: blanchedalmond;
+}
+
+nav {
+  background-color: blanchedalmond;
+}
+
+nav a:link {
+  padding: 20px;
+  background-color: blanchedalmond;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: #555;
+}
+
+nav a:hover {
+  background-color: #333;
+  color: blanchedalmond;
+}
+
+article {
+  padding: 20px;
+}
+
+article h1 {
+  font-size: 36px;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+article h2 {
+  font-size: 28px;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+article p {
+  /* default is 16px */
+  font-size: 18px;
+  /* space between each line */
+  line-height: 24px;
+  /* space between each paragraph */
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  font-familiy: georgia, times, serif;
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* classes start with a . and can be used multiple times */
+.pull_quote {
+  background-color: blanchedalmond;
+  padding:20px 20px;
+  font-familiy: georgia, times, serif;
+  font-style: italic;
+  font-size: 28px;
+  line-height: 36px;
+  margin: 0 100px 20px;
+  border-left: 25px solid #333;
+}
