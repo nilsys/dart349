@@ -6,14 +6,17 @@
 }
 
 body {
-  background-color: #fab000;
-  font-family: gotham, verdana, arial, sans-serif;
+  background-color: #333;
+  /* background-color: #d9e7ff; /* light blue */ */
+  font-family: georgia, verdana, arial, sans-serif;
 }
 
 header {
   padding: 20px;
-  background-color: #333;
+  background-color: #222; /* grey */
   color: #fff;
+  line-height: 70px;
+  text-align: center;
 }
 
 /* specificity */
@@ -23,45 +26,62 @@ header h1 {
 }
 
 header h2 {
-  font-familiy: georgia, times, serif;
-  font-style: italic;
-  color: blanchedalmond;
+  font-family: georgia, times, serif;
+  /* font-style: italic; */
+  color: #ffe9e5; /* light pink */
+  text-transform: capitalize;
 }
 
 nav {
-  background-color: blanchedalmond;
+  background-color: #222; /* dark grey */
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  height: 65px;
 }
 
 nav a:link {
-  padding: 20px;
-  background-color: blanchedalmond;
+  padding: 20px 40px;
+  /* background-color: #333; */
+  background-color: #ffe9e5; /* light pink */
+  /* border-bottom: 15px solid #ffe9e5; */
   display: inline-block;
-  color: #000;
+  color: #222;
   text-decoration: none;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 nav a:visited {
-  color: #555;
+  color: #222;
 }
 
 nav a:hover {
-  background-color: #333;
-  color: blanchedalmond;
+  background-color: #ffe9e5; /* light pink */
+  border-bottom: 8px solid #666;
+  color: #333; /* grey */
+}
+
+nav a:active {
+  background-color: #ffe9e5; /* light pink */
+  color: #333;
 }
 
 article {
-  padding: 20px;
+  padding: 70px;
 }
 
 article h1 {
   font-size: 36px;
   text-transform: capitalize;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 article h2 {
   font-size: 28px;
   text-transform: capitalize;
+  margin-top: 50px;
   margin-bottom: 5px;
 }
 
@@ -72,22 +92,23 @@ article p {
   line-height: 24px;
   /* space between each paragraph */
   margin-bottom: 20px;
+  color: #666;
 }
 
 footer {
   background-color: #333;
   padding: 20px;
   color: #fff;
-  font-familiy: georgia, times, serif;
+  font-family: georgia, times, serif;
   font-style: italic;
   font-size: 14px;
 }
 
 /* classes start with a . and can be used multiple times */
 .pull_quote {
-  background-color: blanchedalmond;
+  background-color: #666;
   padding:20px 20px;
-  font-familiy: georgia, times, serif;
+  font-family: georgia, times, serif;
   font-style: italic;
   font-size: 28px;
   line-height: 36px;
