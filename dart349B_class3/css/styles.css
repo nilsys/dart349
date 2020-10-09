@@ -74,12 +74,14 @@ article {
 
 article h1 {
   font-size: 36px;
+  color: #fff;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
 
 article h2 {
   font-size: 28px;
+  color: #fff;
   text-transform: capitalize;
   margin-top: 50px;
   margin-bottom: 5px;
@@ -92,11 +94,11 @@ article p {
   line-height: 24px;
   /* space between each paragraph */
   margin-bottom: 20px;
-  color: #666;
+  color: #CDE1DE;
 }
 
 footer {
-  background-color: #333;
+  background-color: #111;
   padding: 20px;
   color: #fff;
   font-family: georgia, times, serif;
@@ -113,5 +115,5 @@ footer {
   font-size: 28px;
   line-height: 36px;
   margin: 0 100px 20px;
-  border-left: 25px solid #333;
+  border-left: 25px solid #CDE1DE;
 }
