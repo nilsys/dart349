@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap';
 
 * {
   margin: 0;
@@ -8,18 +8,17 @@
 
 body {
   font-size: 16px;
-  /* background-color: #333; */
-  /* font-family: 'Kanit', sans-serif; */
+  /* font-family: 'Poppins', sans-serif; */
 }
 
 nav {
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #f2a7cd; /* pink */
   text-transform: uppercase;
   text-align: center;
-  font-size: 22px;
+  font-size: 1.5em;
   font-weight: normal;
-  height: 65px;
+  height: 4em;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -31,8 +30,9 @@ nav a:link {
   display: inline-block;
   color: #fff;
   text-decoration: none;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: 0.5em;
+  margin-right: 1em;
+  font-weight:bold;
 }
 
 nav a:visited {
@@ -51,20 +51,21 @@ nav a:active {
 section.header_lrg {
   background-color: #f2a7cd; /* pink */
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .header_lrg header {
-  /* border: 1px solid red;  */
+  /* border: 1px solid red; */
   color: #fff;
-  text-align: center;
+  text-align: left;
+  margin: 3em;
 }
 
 .header_lrg h1 {
-	font-family: 'Kanit', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 5em;
 	line-height: 1.5em;
 	text-transform: uppercase;
@@ -73,15 +74,37 @@ section.header_lrg {
 }
 
 .header_lrg h2 {
-	font-family: 'Kanit', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 2em;
 	text-transform: capitalize;
   color: #fcf1de;
 	font-weight: normal;
 }
 
+section transition_img {
+  background-color: #f2a7cd; /* pink */
+  width: 100%;
+  /* height: auto;
+  min-height: 15px; */
+  margin-top:10px;
+  display: flex;
+  justify-content:flex-end;
+  align-items:flex-end;
+}
 
+.transition_img figure {
+  border: 1px solid red;
+  /* width: 100%;
+  height: auto; */
+  position: absolute;
+  z-index: 0;
+}
 
+section.text1 {
+  background-color: #b26a3d;
+  width: 100%;
+  display: flex;
+}
 
 
 
