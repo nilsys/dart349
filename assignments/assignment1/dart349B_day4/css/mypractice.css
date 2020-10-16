@@ -12,7 +12,6 @@ body {
   font-size: 16px;
 }
 
-
 section.header_lrg { /* this is the parent container */
   background-color: #333;
   width: 100%;
@@ -56,10 +55,16 @@ section.text1 {
 }
 
 .text1 article {
+  font-family: 'Arial';
   background-color: #fff;
   width: 30%; /* this means 30% of the parent's element, default position is top left-hand corner*/
   padding: 2em;
   margin-right: 2em;
+}
+
+.text1 article h1 {
+  text-transform: uppercase;
+  padding-bottom: 1em;
 }
 
 
@@ -83,6 +88,7 @@ section.col3x {
 }
 
 .col3x figcaption {
+  font-family: 'Arial';
   background-color: #333;
   color: #fff;
   padding: 2em;

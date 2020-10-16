@@ -55,7 +55,14 @@ section.trio {
 }
 
 section.trio {
-    background: #333;
+  /* how to insert  backgroud image */
+    background: url(../images/bg1.jpg) no-repeat center center;
+    background-size: cover; /*to cover entire space */
+
+
+    /*    ../ means jump out of the css folder, then in the practice folder, you'll find images folder */
+    /*  if image is small, it will repeat, so write no-repeat to just show 1 image */
+
     display: grid;
     grid-template-columns: 2fr 3fr 1fr 3fr 1fr 3fr 2fr;
     grid-template-rows: 2fr 3fr 1fr 3fr 1fr 3fr 2fr;
@@ -86,6 +93,10 @@ section.trio h1 {
   color: aquamarine;
   grid-column: 6; /*no need to span it because it will start at 6 */
   grid-row: 2;
+  align-self: center; /*alignes text vertically */
+  justify-self: center; /* aligns text horizontally */
+  /*justify-self: end;*/ /*puts text at right side */
+  /*align-self: end;*/ /*aligns to bottom*/
 }
 
 section.el {

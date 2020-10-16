@@ -1,0 +1,23 @@
+<svg id="caterpillar_arrow" data-name="caterpillar arrow" xmlns="http://www.w3.org/2000/svg" width="123.75" height="20.813" viewBox="0 0 220 37">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-linecap: round;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 4.68px;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M1.246,25.305S7.038,9.028,25.662,9.028c18.028,0,17.657,16.277,41.371,16.277,21.688,0,18.248-16.277,35.945-16.277,19.74,0,16.51,16.277,35.946,16.277,21.848,0,15.656-16.277,34.543-16.277,16.81,0,10.94,10.173,35.991,10.173"/>
+  <path class="cls-2" d="M201.32,2.246l6.454,16.277L201.32,33.444l16.277-15.6Z"/>
+</svg>
