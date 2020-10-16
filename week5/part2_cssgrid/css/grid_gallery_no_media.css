@@ -9,9 +9,16 @@ main {
 	padding:20px;
 	display: grid;
 	grid-gap: 20px;
-	/* grid-template-columns: repeat(5, 1fr); */
-	/* grid-template-columns: repeat( 5, minmax(250px, 1fr) ); */
+
+	/*repeat 5 times 1fr so you don't have to type if 5 times */
+	/*grid-template-columns: repeat(5, 1fr); */
+
+	/* this gives me a min size and max size; when this is shrinking down, you never want it to get smaller than the min size of 280 px; the max size is 1fr --> it will have a horizontal scrollbar if it can't all fit tho*/
+	/* grid-template-columns: repeat( 5, minmax(280px, 1fr) ); */
+
+
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		/* instead of forcing it to have 5 columns,it automatically fits within the minimum size of 280px and max size of 1fr --> instead of having horizontal scrollbar, it will automatically fit the amt of columns needed */
 
 }
 

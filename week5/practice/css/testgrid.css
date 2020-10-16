@@ -20,7 +20,9 @@ section.circle {
 
 }
 
+/* this is how he made a circle */
 section.circle div {
+  /* as long as width and height are the same, 50% border-radius will give perfect circle */
     width:40vmin;
     height: 40vmin;
     background:#eee;
@@ -46,6 +48,7 @@ p {
 section.trio {
     background: rgba(12, 12, 10, 0.8);
     display: grid;
+    /* if they have all equal values, we could've used a repeat value */
     grid-template-columns: 2fr 3fr 1fr 3fr 1fr 3fr 2fr;
     grid-template-rows: 2fr 3fr 1fr 3fr 1fr 3fr 2fr;
     grid-gap: 1fr;
@@ -77,6 +80,12 @@ section.trio h2 {
   color:#fff;
   grid-column: 2;
   grid-row:6;
+}
+
+section.trio h1 {
+  color: aquamarine;
+  grid-column: 6; /*no need to span it because it will start at 6 */
+  grid-row: 2;
 }
 
 section.el {
