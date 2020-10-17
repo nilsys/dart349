@@ -1,0 +1,44 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+section {
+    width:100%;
+}
+
+section.color-grid {
+    /* background: rgba(12, 12, 10, 0.8); */
+    display: grid;
+    grid-template-columns: 648px;
+    grid-template-rows: repeat(7,70px);
+}
+
+section.color-grid div:nth-child(1) {
+  background: #c5dd56; /* lime green */
+}
+
+section.color-grid div:nth-child(2) {
+  background: #1a49b4; /* electric blue */
+}
+
+section.color-grid div:nth-child(3) {
+  background: #304445; /* forest green */
+}
+
+section.color-grid div:nth-child(4) {
+  background: #c5dd56; /* lime green */
+}
+
+section.color-grid div:nth-child(5) {
+  background: #f88540; /* fiery orange */
+}
+
+section.color-grid div:nth-child(6) {
+  background: #1a49b4; /* electric blue */
+}
+
+section.color-grid div:nth-child(7) {
+  background: #c5dd56; /* lime green */
+}
