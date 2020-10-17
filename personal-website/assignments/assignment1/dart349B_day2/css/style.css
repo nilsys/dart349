@@ -1,0 +1,40 @@
+/* this is a css comment */
+
+body {
+  background-color: #56445D;
+  font-family: tahoma,sans-serif;
+}
+
+h1 {
+  font-size: 72px;
+  color: #FFCAD4;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 36px;
+  color: #A8EDBA;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #D8E2DC;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #D8E2DC;
+}
+
+img {
+  width:50%;
+}
+
+a {
+  color: #D8E2DC;
+}
