@@ -1,15 +1,73 @@
+@font-face {
+  font-family: 'helvetica-bold';
+  src: url('helvetica-bold.eot'); /* IE9 Compat Modes */
+  src: url('helvetica-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('helvetica-bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('helvetica-bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('helvetica-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('helvetica-bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+/* code source for font import: https://css-tricks.com/snippets/css/using-font-face/ */
+
 * {
     padding:0;
     margin:0;
     box-sizing: border-box;
 }
 
+
+body {
+    font-family: 'helvetica-bold.otf', sans-serif;
+}
+
 section {
     width:100%;
 }
 
+section.columnsx2 {
+  display: grid;
+  grid-template-columns: 26px 648px;
+}
+
+section.date {
+  padding-top: 18px;
+  padding-bottom: 116px;
+}
+
+.date h2 {
+  font-size: 20px;
+}
+
+section.location {
+  padding-bottom: 14px;
+  border-bottom: 1px solid black;
+  margin-bottom: 16px;
+}
+
+.location h1 {
+  font-size: 46px;
+  line-height: 38px;
+}
+
+section.subtitle {
+  padding-bottom: 96px;
+}
+
+.subtitle h3 {
+  font-size: 22px;
+}
+
+
+section.painter {
+  padding-bottom: 18px;
+}
+
+.painter h1 {
+  font-size: 46px;
+}
+
+
 section.color-grid {
-    /* background: rgba(12, 12, 10, 0.8); */
     display: grid;
     grid-template-columns: 648px;
     grid-template-rows: repeat(7,70px);
