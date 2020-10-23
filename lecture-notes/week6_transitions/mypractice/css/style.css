@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width:100%;
+  background: burlywood;
+  display: flex;
+  /* justify-content: flex-end; *//*for horizontal alignment*/
+}
+
+/* the original state of the link is defined hee in a:link */
+nav a:link {
+  background: cadetblue;
+  flex-grow: 1; /*flex-grow allows links to be evenly spread*/
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  color: #333;
+  /* transition is a property where the original object has the ability to change and that ability will take place over a certain amount of time */
+  /* "all" means all of these properties can potentially change */
+  /* "1s" is the amount of time for change to occur, though 1s is long; normally santo puts 0.3s */
+  transition: all 0.3s;
+}
+
+nav a:visited {
+  color: #222;
+}
+
+nav a:hover {
+  background: #333;
+  color: cadetblue;
+}
+
+/* just writing ".first" without "section" works too */
+section.first {
+  width: 100%;
+  height: 100vh;
+  background: blanchedalmond;
+
+  display: flex; /*once flexed, it stretches to the bottom */
+  justify-content: center; /*horizontally aligned*/
+  align-items: center; /*this will remove the super high, stretched-out property*/
+}
+
+.first article {
+  background: #eee;
+  color:#333;
+  width: 20%;
+  padding: 20px;
+  /* add transition in parent of article:hover, which is here */
+  transition: all 0.5s;
+}
+
+/* we use hover for any HTML el; this switches the colors between normal article and article:hover */
+.first article:hover {
+  background: #333;
+  color: #eee;
+}
+
+article p {
+  font-size: 1.5vmax; /*the size is defined purely by what's inside the article*/
+}
+
+.first figure {
+  width: 40%;
+  /* border: 1px solid red; */
+}
+
+/* this is the original state of the image */
+figure img {
+  width: 100%; /*when you tell the width to be 100%, the image becomes responsive and shrinks when you change windowsize*/
+  /* filter: grayscale(0%); */ /*this means originally the grayscale is 0%, so no black-and-white*/
+  filter: blur(3px);
+  filter: sepia(100%);
+  opacity:1; /* 1 means full opacity*/
+  border-radius: 50px; /*starts off with border radius*/
+  transition: all 3s 1s; /*the second value means it takes 3 seconds to change, and the third value means there's a delay of 1s before the transition fades */
+}
+
+/* we enable a state by enacting a hover state; i could've done this on the figure or the img itself */
+figure img:hover {
+  filter: grayscale(100%);
+  filter: sepia(0%);
+  /* when i roll over the image, it comes into view */
+  filter: blur(0px);
+  opacity:0; /*means completely transparent*/
+  width:120%;
+  border-radius: 0px;
+}
+
+.second {
+  width: 100%;
+  height: 100vh;
+  /* background: chocolate; */
+
+  /* prevents repetition of images + puts image in center center */
+  background: url(../images/places3.jpg) no-repeat fixed center center; /*adding fixed makes it so image stays in place*/
+  background-size:cover; /*image takes up full space*/
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.second article {
+  /* background: #eee; */
+  background:rgba(255, 255, 255, 0.8); /*a stands for alpha */
+  color:#000;
+  width: 20%;
+  padding: 20px;
+  /* opacity:.5; */
+}
