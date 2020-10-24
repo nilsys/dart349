@@ -1,0 +1,119 @@
+/* day 3 intro to semantic elements and classes */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+  /* background-color: #d9e7ff; /* light blue */ */
+  font-family: georgia, verdana, arial, sans-serif;
+}
+
+header {
+  padding: 20px;
+  background-color: #222; /* grey */
+  color: #fff;
+  line-height: 70px;
+  text-align: center;
+}
+
+/* specificity */
+header h1 {
+  font-size: 62px;
+  text-transform: uppercase;
+}
+
+header h2 {
+  font-family: georgia, times, serif;
+  /* font-style: italic; */
+  color: #ffe9e5; /* light pink */
+  text-transform: capitalize;
+}
+
+nav {
+  background-color: #222; /* dark grey */
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  height: 65px;
+}
+
+nav a:link {
+  padding: 20px 40px;
+  /* background-color: #333; */
+  background-color: #ffe9e5; /* light pink */
+  /* border-bottom: 15px solid #ffe9e5; */
+  display: inline-block;
+  color: #222;
+  text-decoration: none;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+nav a:visited {
+  color: #222;
+}
+
+nav a:hover {
+  background-color: #ffe9e5; /* light pink */
+  border-bottom: 8px solid #666;
+  color: #333; /* grey */
+}
+
+nav a:active {
+  background-color: #ffe9e5; /* light pink */
+  color: #333;
+}
+
+article {
+  padding: 70px;
+}
+
+article h1 {
+  font-size: 36px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+article h2 {
+  font-size: 28px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+article p {
+  /* default is 16px */
+  font-size: 18px;
+  /* space between each line */
+  line-height: 24px;
+  /* space between each paragraph */
+  margin-bottom: 20px;
+  color: #CDE1DE;
+}
+
+footer {
+  background-color: #111;
+  padding: 20px;
+  color: #fff;
+  font-family: georgia, times, serif;
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* classes start with a . and can be used multiple times */
+.pull_quote {
+  background-color: #666;
+  padding:20px 20px;
+  font-family: georgia, times, serif;
+  font-style: italic;
+  font-size: 28px;
+  line-height: 36px;
+  margin: 0 100px 20px;
+  border-left: 25px solid #CDE1DE;
+}
