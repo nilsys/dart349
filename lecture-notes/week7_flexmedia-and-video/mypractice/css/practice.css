@@ -1,0 +1,49 @@
+/* mobile view first */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section.parent {
+  width: 100%;
+  /* the smallest this section will ever be is 100% of the viewport, but if we need it to be bigger, we set the actual height to auto */
+  min-height: 100vh;
+  height: auto;
+  background: darkseagreen;
+  border: 20px solid white;
+  padding: 4%;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+}
+
+article {
+  background: white;
+  padding: 2%;
+  margin-bottom: 4%;
+  /* it's a mix of flex grow and flex basis */
+  flex:1 100%;
+}
+
+
+/* === TABLET LAYOUT INHERITS FROM MOBILE 600PX and higher === */
+
+@media only screen and (min-width: 600px) {
+    .parent article {
+      flex: 1 46%;
+      margin: 2%;
+    }
+}
+
+/* === DESKTOP LAYOUT INHERITS FROM MOBILE AND TABLET 980PX and higher === */
+
+@media only screen and (min-width: 980px) {
+    .parent article {
+      /* I wanted 25% distribution for each item, but since there's 2% margin on either end of the items, I subtract 4% */
+      flex: 1 21%;
+    }
+}
