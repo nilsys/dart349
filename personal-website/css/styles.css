@@ -111,7 +111,7 @@ section.transition_img {
 }
 
 section.text1 {
-  background-color: #b26a3d;
+  background-color: #b26a3d; /*brown*/
   width: 100%;
   min-height: 75vh;
   height: auto;
@@ -142,13 +142,43 @@ section.text1 {
   text-transform: capitalize;
   margin-top: 50px;
   margin-bottom: 15px;
+  text-decoration-color: red; /* change underline color */
+}
+
+.text1 article a:link {
+  text-decoration-color: #87461e; /* dark brown */
+}
+
+.text1 article a:visited {
+  text-decoration-color: #87461e; /* dark brown */
+}
+
+.text1 article a:hover {
+  text-decoration-color: #f2a7cd; /* pink */
+}
+
+.text1 article a:active {
+  text-decoration-color: #f2a7cd; /* pink */
 }
 
 .text1 article p {
   font-size: 1em;
   line-height: 1.5em;
   margin-bottom: 20px;
-  color: #CDE1DE;
+  color: #fcf1de;
+  /* color: #CDE1DE; */
+}
+
+.text1 figcaption {
+  color: #fcf1de;
+}
+
+.text1 figcaption a:link {
+  color: #fcf1de;
+}
+
+.text1 figcaption a:visited {
+  color: #fcf1de;
 }
 
 .text1 .pull_quote {
