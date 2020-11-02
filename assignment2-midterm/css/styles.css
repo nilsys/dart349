@@ -1,5 +1,9 @@
 @import 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap';
 
+/* importing Lora and Montserrat typefaces */
+@import 'https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap';
+
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +19,7 @@ nav a {
 }
 
 nav.top_navigation {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   width: 100%;
   background-color: #212226; /* raisin black */
   /* background-color: #1e2f97;*/ /* cosmic cobalt */
@@ -34,7 +38,7 @@ nav.top_navigation {
 }
 
 .top_navigation a:link {
-  border: 1px solid white;
+  border: 1px solid #fff;
   padding: 10px 25px;
   display: inline-block;
   color: #fff;
@@ -55,7 +59,7 @@ nav.top_navigation {
   color: #15cdcb; /* egg blue */
 }
 
-section.header_lrg {
+section.header_title {
   width: 100%;
   height: 80vh;
   display: flex;
@@ -65,6 +69,16 @@ section.header_lrg {
   text-shadow: 2px 2px 20px #fff;
 }
 
+section.header_lrg {
+  background-color: #212226; /* raisin black */
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 section.header_sml {
   background-color: #212226; /* raisin black */
   width: 100%;
@@ -72,31 +86,35 @@ section.header_sml {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-flow: row wrap;
 }
 
-.header_lrg header, .header_sml header {
+.header_title header, .header_sml header {
   /* background-color: #212226;*/ /* raisin black */
   opacity: 90%;
   color: #000;
   text-align: right;
   margin: 8em;
   z-index: 5;
-  /* background-color: #212226; /* raisin black */ */
   /* padding: 30px 50px; */
 }
 
-
-.header_lrg h1, .header_sml h1 {
-	font-family: 'Poppins', sans-serif;
-	font-size: 5.5em;
-	line-height: 1.2em;
-	text-transform: uppercase;
-  /* background-color: #212226; /* raisin black */ */
-	/* color: #15cdcb; /* egg blue */ */
-	font-weight: bold;
+.header_lrg header {
+  color: #fff;
+  margin: 8em;
 }
 
-.header_lrg h2, .header_sml h2 {
+.header_title h1, .header_lrg h1, .header_sml h1 {
+	font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+	font-size: 5.5em;
+	/* line-height: 1.2em; */
+  padding-bottom: 40px;
+	text-transform: uppercase;
+	/* color: #15cdcb; /* egg blue */
+}
+
+.header_title h2, .header_sml h2 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 2.5em;
 	text-transform: capitalize;
@@ -104,7 +122,13 @@ section.header_sml {
 	font-weight: normal;
 }
 
-.header_lrg video {
+.header_lrg h2 {
+  font-family: 'Lora', sans-serif;
+  font-weight: normal;
+  font-size: 1.8em;
+}
+
+.header_title video {
   object-fit: cover;
   width: 100%;
   height: 80vh;
@@ -195,9 +219,69 @@ section.netflix-screenshots {
 }
 
 .netflix-screenshots figure img:hover {
- filter:none;
+  filter:none;
   opacity: 1;
 }
+
+
+
+/* Specific to MOODBOARD */
+/*  */
+
+/* applies to all 3 inspiration sections */
+section.inspiration_header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  height: auto;
+  border: 3px solid red;
+  width: 100%;
+
+}
+
+.inspiration_header hgroup {
+  /* border: 3px solid blue; */
+  text-align: center;
+}
+
+.inspiration_header h2 {
+  font-family: 'Lora', serif;
+  font-size: 2em;
+  line-height: 1em;
+  text-transform: lowercase;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.inspiration_header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4em;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+section.inspiration1 {
+  background-color: #fff;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------- */
+
+
 
 nav.link_to_next_page {
   background: #212226; /* raisin black */
